@@ -3,7 +3,7 @@
 
 int main(){
 char *string;
-scanf("%s",&string);
+scanf("[^\n]",&string);
 
 printf("You entered: %s",string);
 

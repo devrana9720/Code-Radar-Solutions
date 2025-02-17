@@ -3,9 +3,9 @@
 
 int main(){
 char *string;
-scanf("%c",&string);
+scanf("%s",&string);
 
-printf("You entered: %c",string);
+printf("You entered: %s",string);
 
 return 0;
 }

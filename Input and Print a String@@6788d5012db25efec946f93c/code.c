@@ -1,11 +1,24 @@
 // Your code here...
+// #include <stdio.h>
+
+// int main(){
+// char *string;
+// scanf("[^\n]",&string);
+
+// printf("You entered: %s",string);
+
+// return 0;
+// }
+
 #include <stdio.h>
 
-int main(){
-char *string;
-scanf("[^\n]",&string);
+int main() {
+    char input[100]; // Array to store input
 
-printf("You entered: %s",string);
+    printf("Enter a string: ");
+    scanf("%[^\n]", input); // Read input including spaces
 
-return 0;
+    printf("You entered: %s\n", input);
+
+    return 0;
 }

@@ -1,14 +1,20 @@
 // Your code here...
 #include <stdio.h>
+#include <string.h>
 
-char main(){
-    char str1[100];
-    scanf("%s",&str1);
-    char str3[100];
-    scanf("%s",&str2)
+int main() {
+    char input[100];
+    printf("Enter a string: ");
+    fgets(input, sizeof(input), stdin);
+    
+    // Remove newline character from the input if present
+    input[strcspn(input, "\n")] = '\0';
 
-    char add=(str1+"and"+str2);
-    printf("%s",add);
-
+    char *token = strtok(input, " ");
+    while (token != NULL) {
+        printf("%s\n", token);
+        token = strtok(NULL, " ");
+    }
+    
     return 0;
 }

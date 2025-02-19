@@ -11,9 +11,14 @@ int main() {
     input[strcspn(input, "\n")] = '\0';
 
     char *token = strtok(input, " ");
+    int first = 1;
     while (token != NULL) {
-        printf("%s ", token);
+        if (!first) {
+            printf(" and ");
+        }
+        printf("%s", token);
         token = strtok(NULL, " ");
+        first = 0;
     }
     
     return 0;

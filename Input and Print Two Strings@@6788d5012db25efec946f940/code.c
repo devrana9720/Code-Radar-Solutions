@@ -1,5 +1,6 @@
 // Your code here...
-#include <stdio.h>
+
+    #include <stdio.h>
 
 int main() {
     char input[100];
@@ -18,8 +19,11 @@ int main() {
     while (i < length) {
         if (input[i] == ' ') {
             printf(" and ");
-        } else {
-            printf("%c", input[i]);
+        }
+        else {
+            if (i > 0 && input[i-1] == ' ') {
+                printf("%c", input[i]);
+            }
         }
         i++;
     }

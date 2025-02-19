@@ -1,25 +1,29 @@
 // Your code here...
 #include <stdio.h>
-#include <string.h>
 
 int main() {
     char input[100];
-    printf("You entered: ");
+    printf("Enter a string: ");
     fgets(input, sizeof(input), stdin);
-    
-    // Remove newline character from the input if present
-    input[strcspn(input, "\n")] = '\0';
 
-    char *token = strtok(input, " ");
-    int first = 1;
-    while (token != NULL) {
-        if (!first) {
-            printf(" and ");
-        }
-        printf("%s", token);
-        token = strtok(NULL, " ");
-        first = 0;
+    // Remove newline character from the input if present
+    int length = 0;
+    while (input[length] != '\n' && input[length] != '\0') {
+        length++;
     }
-    
+    input[length] = '\0';
+
+    int i = 0;
+    printf("Hello");
+    while (i < length) {
+        if (input[i] == ' ') {
+            printf(" and ");
+        } else {
+            printf("%c", input[i]);
+        }
+        i++;
+    }
+    printf("\n");
+
     return 0;
 }

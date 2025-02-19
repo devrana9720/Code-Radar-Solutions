@@ -4,7 +4,7 @@
 
 int main() {
     char input[100];
-    printf("You entered: ");
+    printf("Enter a string: ");
     fgets(input, sizeof(input), stdin);
 
     // Remove newline character from the input if present
@@ -14,18 +14,15 @@ int main() {
     }
     input[length] = '\0';
 
-    int i = 0;
     printf("Hello");
-    while (i < length) {
+    for (int i = 0; i < length; i++) {
         if (input[i] == ' ') {
             printf(" and ");
-        }
-        else {
-            if (i > 0 && input[i-1] == ' ') {
-                printf("%c", input[i]);
+            while (input[i] == ' ' && i < length) {
+                i++;
             }
         }
-        i++;
+        printf("%c", input[i]);
     }
     printf("\n");
 

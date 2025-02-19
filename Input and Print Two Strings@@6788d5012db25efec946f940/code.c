@@ -1,6 +1,6 @@
 // Your code here...
 
-    #include <stdio.h>
+#include <stdio.h>
 
 int main() {
     char input[100];

@@ -7,8 +7,6 @@ int main(){
     scanf("%d",&b);
     
     if(a!=b)printf("True");
-    
-    else
-        printf("False");
+    else printf("False");
     
 }

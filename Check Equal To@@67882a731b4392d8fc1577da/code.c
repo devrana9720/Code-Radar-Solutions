@@ -6,5 +6,5 @@ int main(){
     scanf("%d",&a);
     scanf("%d",&b);
 
-    printf("%s",a==b);
+    printf(a==b);
 }

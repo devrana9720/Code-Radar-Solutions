@@ -3,7 +3,7 @@
 
 int main(){
 
-    char name[100],Hobby[100];
+    char *name,*Hobby;
     int Age;
     scanf("%s",&name);
     scanf("%d",&Age);

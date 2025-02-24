@@ -9,6 +9,6 @@ int main(){
     scanf("%d",&c);
 
     float sum=a+b+c;
-    float aveg=sum/3;
+    int aveg=sum/3;
     printf("Average: %.2f",aveg);
 }

@@ -8,7 +8,7 @@ int main(){
     scanf("%d",&b);
     scanf("%d",&c);
 
-    float sum=a+b+c;
-    int aveg=sum/3;
+    int sum=a+b+c;
+    float aveg=sum/3;
     printf("Average: %.2f",aveg);
 }

@@ -10,5 +10,5 @@ int main(){
 
     int sum=a+b+c;
     int aveg=sum/3;
-    printf("Average: %f",aveg);
+    printf("Average: %.2f",aveg);
 }

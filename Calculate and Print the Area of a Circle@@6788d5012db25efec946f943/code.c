@@ -9,5 +9,5 @@ int main(){
     float power=pow(rad,radi);
     float Area=3.14*power;
 
-    printf("Area: %.2f",area);
+    printf("Area: %.2f",Area);
 }

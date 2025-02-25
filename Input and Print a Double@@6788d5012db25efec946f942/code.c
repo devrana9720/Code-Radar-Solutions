@@ -3,14 +3,7 @@
 
 int main() {
     double num;
+    scanf("%d",&num);
 
-    // Taking user input
-   
-    scanf("%lf", &num);
-
-    // Printing the value and memory address
-    printf("You entered: %.4lf\n", num);
-    
-
-    return 0;
+    printf("You entered: %lf",num);
 }

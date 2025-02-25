@@ -5,7 +5,7 @@ int main() {
     double num;
 
     // Taking user input
-    printf("Enter a double value: ");
+   
     scanf("%lf", &num);
 
     // Printing the value and memory address

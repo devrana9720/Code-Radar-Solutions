@@ -9,7 +9,7 @@ int main() {
     scanf("%lf", &num);
 
     // Printing the value and memory address
-    printf("You entered: %lf\n", num);
+    printf("You entered: %.4lf\n", num);
     
 
     return 0;

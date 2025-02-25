@@ -10,7 +10,7 @@ int main() {
 
     // Printing the value and memory address
     printf("You entered: %lf\n", num);
-    printf("Memory address of num: %p\n", (void*)&num);
+    
 
     return 0;
 }

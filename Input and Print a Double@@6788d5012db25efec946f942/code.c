@@ -1,9 +1,16 @@
 // Your code here...
 #include <stdio.h>
 
-int main(){
+int main() {
+    double num;
 
-    float num;
-    scanf("%f",&num);
-    printf("You entered: %.4lf",num);
+    // Taking user input
+    printf("Enter a double value: ");
+    scanf("%lf", &num);
+
+    // Printing the value and memory address
+    printf("You entered: %lf\n", num);
+    printf("Memory address of num: %p\n", (void*)&num);
+
+    return 0;
 }

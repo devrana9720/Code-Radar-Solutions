@@ -5,7 +5,8 @@
 int main(){
     float rad;
     scanf("%f",&rad);
-    float area=3.14*(rad*rad);
+    int radi=2;
+    float area=3.14*(pow(rad,radi));
 
     printf("Area: %.2f",area);
 }

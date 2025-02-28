@@ -6,10 +6,11 @@ int main() {
     scanf("%d %d", &num1, &num2);
     
     // Print true if neither number is greater than zero, otherwise false
-    if (!(num1 > 0) && !(num2 > 0)) {
-        printf("True\n");
-    } else {
-        printf("False\n");
+    if(!(num1>0) && !(num2>0)){
+        printf("True");
+    }
+    else{
+        printf("False");
     }
     
     return 0;

@@ -1,13 +1,16 @@
 // Your code here...
 #include <stdio.h>
-int main(){
-    int a,b;
-    scanf("%d",&a);
-    scanf("%d",&a);
-    if((a<0) && (b<0)){
-        printf("False");
+
+int main() {
+    int num1, num2;
+    scanf("%d %d", &num1, &num2);
+    
+    // Print true if neither number is greater than zero, otherwise false
+    if (!(num1 > 0) && !(num2 > 0)) {
+        printf("true\n");
+    } else {
+        printf("false\n");
     }
-    else{
-        printf("True");
-    }
+    
+    return 0;
 }

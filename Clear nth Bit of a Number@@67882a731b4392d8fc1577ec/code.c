@@ -1,12 +1,14 @@
 // Your code here...
 #include <stdio.h>
+
 int main() {
     int num, n;
     scanf("%d %d", &num, &n);  // Read the number and bit position
 
-    int bitValue = (num << n) & 0;  // Right shift and AND with 1 to get the nth bit
+    num = num & ~(1 << n);  // Clear the nth bit by using AND with NOT
 
-    printf("%d\n", bitValue);  // Print the result
+    printf("%d\n", num);  // Print the updated number
 
     return 0;
 }
+

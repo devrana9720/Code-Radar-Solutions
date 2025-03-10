@@ -9,4 +9,6 @@ int main(){
     else{
         printf("Not Divisible");
     }
+
+    return 0;
 }

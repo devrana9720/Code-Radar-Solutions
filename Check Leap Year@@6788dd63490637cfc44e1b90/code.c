@@ -3,9 +3,6 @@
 
 int main() {
     int year;
-
-    // Input from user
-    printf("Enter a year: ");
     scanf("%d", &year);
 
     // Leap year condition

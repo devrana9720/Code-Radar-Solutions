@@ -3,8 +3,8 @@
 int main(){
     char alph;
     scanf("%c",&alph);
-    if(alph>= 'A' && alph<='Z'){
-        printf("uppercase");
+    if(alph>='A' && alph<='Z'){
+        printf("Uppercase");
     }
     else{
         printf("Lowercase");

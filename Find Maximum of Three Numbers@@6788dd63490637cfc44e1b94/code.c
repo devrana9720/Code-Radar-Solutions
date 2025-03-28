@@ -11,7 +11,7 @@ int main(){
     if(c>a && c>b){
         printf("%d",c);
     }
-    if((a==b)==c){
+    if(a==b==c){
         printf("%d",c);
     }
 }

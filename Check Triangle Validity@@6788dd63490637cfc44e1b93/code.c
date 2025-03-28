@@ -1,12 +1,8 @@
 #include <stdio.h>
-#include <math.h>
 int main(){
-    float a,b;
-    scanf("%d%d",&a,&b);
-    float c=((a*a)+(b*b));
-    float square=sqrt(c);
-    float d=sqrt(c);
-    if(d==c){
+    int a,b,c;
+    scanf("%d%d%d",&a,&b,&c);
+    if((a+b>c) && (a+c>b) && (b+c>a)){
         printf("Valid");
     }
     else{

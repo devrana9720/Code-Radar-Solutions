@@ -3,8 +3,6 @@
 int main() {
     int num1, num2, num3, largest;
 
-    // Taking input
-    printf("Enter three numbers: ");
     scanf("%d %d %d", &num1, &num2, &num3);
 
     // Finding the largest number
